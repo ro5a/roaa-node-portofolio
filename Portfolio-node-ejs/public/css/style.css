@@ -1,0 +1,359 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    
+    --text-color: #fff;
+  }
+
+body{
+    background-color: #ececec;
+    font-family: 'Roboto Slab', serif;
+}
+/* dark mode style color */
+.dark-mode {
+    background-color: black;
+    color: #ffc200;
+    
+
+  }
+header{
+    display: grid;
+   grid-template-columns: 1fr 2fr;
+    column-gap: 30px;
+    margin-top: 50px;
+}
+.hr1{
+    
+    margin: auto;
+}
+/* animation for character */
+.animate{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #014272 0%,
+      #397cac 29%,
+      #775862 67%,
+      #ffc200 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 190px;
+}
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+.one p{
+    padding: 20px;
+}
+/* style of button for download CV */
+.button{
+    font-size: 10px;
+    color: white;
+    background-color: #ffc200;
+    padding: 15px 30px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    bottom: 15px;
+    left: 80px;
+}
+/* style of button for dark mode */
+.button1{
+    font-size: 10px;
+    color: white;
+    background-color: #ffc200;
+    padding: 15px 30px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    bottom: 15px;
+    right: 80px;
+}
+.button:hover{
+    background-color: #014272;
+    color: #fff;
+    padding: 17px 32px;
+}
+.button1:hover{
+    background-color: #014272;
+    color: #fff;
+    padding: 17px 32px;
+}
+.container{
+    position: relative;
+}
+
+/* style of mobile media */
+@media screen and (max-width:731px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .one{
+        text-align: center;
+    }
+    header img{
+        margin-right: 50px;
+    }
+}
+@media screen {
+    
+}
+header img{
+   width: 400px;
+   border-bottom: 5px solid #ffc200;
+  
+   margin-left: 50px;
+}
+ 
+@media screen and (max-width:600px){
+    header img{
+        width:300px;
+        margin: 50px;
+    }
+}
+header .one{
+    
+    margin-right: 50px;
+}
+@media screen and (max-width:600px) {
+    header .one{
+        
+        margin-left: 50px
+    
+    }
+    
+}
+.hr2{
+    width: 80%;
+    margin: auto;
+    
+}
+header .one h1{
+    color:#014272;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.one .h2{
+    
+    width: fit-content;
+    border-bottom:5px solid #ffc200;
+    font-size: 35px;
+   color: #00225a;
+   font-family: 'Dancing Script', cursive;
+   margin: 10px;
+   margin-bottom: 20px;
+}
+/* order of skills */
+.homeme{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   margin: 10px;
+   
+}
+.homeme i{
+    padding: 10px;
+}
+
+
+
+.skill{
+    color: #00225a;
+   font-size: 30px;
+    padding: 20px;
+    margin-left: 50px;
+}
+.h3{
+    border-bottom:5px solid #ffc200 ;
+}
+/* style of programming language skills */
+.lang{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+
+}
+.lang div{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}
+.lang img{
+   width:30px ; 
+   
+}
+.lang p{
+    margin: 20px;
+}
+/* style of experience section */
+.exp{
+    color: #00225a;
+   font-size: 30px;
+    padding: 20px;
+    margin-left: 50px;
+}
+.h4{
+    border-bottom:5px solid #ffc200 ;
+}
+.service{
+margin: 20px;
+}
+.experience{
+    display: grid;
+   grid-template-columns: auto auto auto;
+   grid-gap: 40px 60px;
+   padding: 20px;
+   justify-content: center;
+                                                 
+}
+.hr3{
+    width: 80%;
+    margin: auto;
+}
+
+.pargraph {
+    border-left: 2px solid gray;
+padding-left: 20px;
+color: #0096dd;
+}
+.pargraph2{
+    border-left: 2px solid gray;
+    padding-left: 20px;
+    color: #0096dd;
+    }
+
+/* style of project section */
+.project{
+    margin: 20px;
+}
+.pro{
+    color: #00225a;
+    font-size: 30px;
+     padding: 20px;
+     margin-left: 50px;
+}
+.project1 {
+    border: 2px solid gainsboro;
+    background-color: gainsboro;
+    border-radius: 5px;
+    box-shadow: 5px grey;
+}
+.project1 p{
+    padding: 10px;
+    text-align: center;
+    border-bottom:5px solid #ffc200 ;
+}
+.hr4{
+    width: 80%;
+    margin: auto;
+}
+
+.h5{
+    border-bottom:5px solid #ffc200 ;
+}
+.project{
+    margin: 20px;
+}
+.pro2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-around;
+}
+.pro2 img{
+    width: 300px;
+    height: 300px;
+}
+.hr5{
+    width: 80%;
+    margin: auto;
+}
+/* style of contuct */
+
+.con{
+    color: #00225a;
+    font-size: 30px;
+     padding: 20px;
+     margin-left: 50px;
+}
+.h6{
+    border-bottom:5px solid #ffc200 ; 
+}
+.social{
+    display: grid;
+    grid-template-rows: auto auto auto ;
+    row-gap: 10px;
+    justify-items: center;  
+    margin: 10px;
+
+}
+
+.contuct{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+.form{
+    color: #00225a;
+    padding: 20px 40px 20px 40px;
+    
+border-radius: 5px;
+box-shadow: 10px gray;
+background-color: #fff;
+}
+.form input{
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow:1px 5px 5px 1px grey;
+    padding: 15px 40px;
+    border-bottom:2px  solid #ffc200;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.form textarea{
+    border-radius: 2px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom:2px  solid #ffc200;
+    margin: 10px;
+    width: 210px;
+    height: 150px;
+    box-shadow:1px 5px 5px 1px grey;
+    padding: 15px;
+
+}
+.button3{
+    font-size: 20px;
+    color: white;
+    background-color: #ffc200;
+    padding: 10px 100px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+
+
